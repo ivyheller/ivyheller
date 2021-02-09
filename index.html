@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>A-Frame - Image Textures</title>
+	<script src="js/aframe-master.1.0.4.min.js"></script>
+</head>
+
+<body>
+<a-scene antialias="true">
+	
+	<a-assets>
+		<img id="sky" src="images/sky.jpg" crossorigin="anonymous" />
+		<img id="grass" src="images/flowers.jpg" crossorigin="anonymous" />
+		<img id="crate" src="images/paisley.jpg" crossorigin="anonymous" />
+		<img id="earth" src="images/basketball-gray.png" crossorigin="anonymous" />
+		<img id="hexagons" src="images/hexagons.png" crossorigin="anonymous" />
+	</a-assets>
+		
+	<a-sky 
+		color = "#FFFFFF"
+		material = "src: #sky">
+	</a-sky>
+
+	<a-plane
+		width="100" height="100"
+		position=" 0.00 0.00 0.00" 
+		rotation="-90 0 0" 
+		color="#888888" 
+		material="src: #grass; repeat:10 10; transparent: true; opacity: 0.9"
+		shadow="cast: false; receive: true">
+	</a-plane>
+	<a-box
+		width = "1" height = "3" depth = "1"
+		position = "3 2 6.5"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #crate"
+		shadow = "cast: true; receive: true">
+	</a-box>
+	<a-box
+		width = "1" height = "3" depth = "1"
+		position = "5 2 5"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #crate"
+		shadow = "cast: true; receive: true">
+	</a-box>  
+	<a-box
+		width = "1" height = "2" depth = "1"
+		position = "3.5 2 5.5"
+		rotation = "0 45 90"  
+		color = "#FFFFFF"
+		material = "src: #crate"
+		shadow = "cast: true; receive: true">
+	</a-box> 
+	<a-box
+		width = "1" height = "1" depth = "3"
+		position = "-1 0.5 7"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #crate"
+		shadow = "cast: true; receive: true">
+	</a-box>
+	<a-box
+		width = "1" height = "2" depth = "1"
+		position = "-1 2 7"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #crate"
+		shadow = "cast: true; receive: true">
+	</a-box>
+   	<a-box
+		width = "1" height = "1" depth = "3"
+		position = "-1 3.5 7"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #crate"
+		shadow = "cast: true; receive: true">
+	</a-box> 
+	<a-sphere
+		radius = "1.25"
+		position = "17 1.25 -5"
+		material = "src: #earth;"
+		shadow = "cast: true; receive: true">
+	</a-sphere>
+	
+	
+</a-scene>
+</body>
+</html>
